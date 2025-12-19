@@ -1,0 +1,122 @@
+
+/* selector{
+property:value;
+property:value;
+}*/
+h1{
+    font-size: 200%;
+    color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    border-style: solid;
+    border-color: blueviolet;
+    border-width: 8px 10px 17px 3px;
+    border:solid 8px blueviolet;
+    border-top:solid 8px blueviolet ;
+    border-left: solid 8px rgb(226, 162, 43)  ;
+    border-right: solid 8px rgb(43, 226, 141) ;
+    border-bottom: solid 8px rgb(226, 43, 43) ;
+
+ 
+    padding-left:8px ;
+    padding-bottom:8px ;
+    padding-right:30px ;
+    padding-top: 30px;
+
+    margin: 40px;
+    margin-top: 40px;
+    margin-bottom:90px ;
+    margin-left: 20px;
+    margin-left: 80px;
+}
+body{
+    background-color: beige;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+h2{
+    text-decoration: underline wavy;
+    font-size: 36px;
+    font-size: italic;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+
+
+    color: rgb(255, 0, 128);
+}
+.class1{
+    color: blue;
+}
+a:link{
+    text-decoration: none;
+    color:blueviolet;
+
+}
+a:visited{
+    color:crimson;
+}
+a:hover{
+    color:blue;
+    font-size: 22px;
+}
+a:active{
+    text-decoration: underline;
+    color:brown;
+}
+.div1{
+    background-color: rgb(139, 0, 12);
+}
+h3{
+    display: inline;
+}
+code{
+    visibility: hidden;
+}
+.overflow{
+    border: solid black 4px;
+    width: 300px;
+    height: 150px;
+    overflow: auto;
+}
+.container{
+    background-color: rgb(226, 43, 220);
+    width: 700px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:  
+    "header header"
+    "sidebar content1"
+    "footer footer"
+    
+    
+    ;
+    
+
+
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+.content{
+    grid-area: content;
+    background-color: aquamarine;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgb(254, 255, 196);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(220, 20, 20);
+}
